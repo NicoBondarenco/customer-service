@@ -1,5 +1,6 @@
 package br.com.runnt.port.api.rest
 
+import br.com.runnt.configuration.extension.pageRequest
 import br.com.runnt.configuration.extension.toUUID
 import br.com.runnt.port.service.location.CityService
 import br.com.runnt.port.service.location.StateService
@@ -37,7 +38,7 @@ fun Route.locationController(): Route = route("/location") {
                 get("/{cityName}") {
                     val acronym = call.parameters["acronym"]
                     val cityName = call.parameters["cityName"]
-                    call.respond(cityService.findByStateAcronymAndCityNameLike(acronym, cityName))
+                    call.respond(cityService.findByStateAcronymAndCityNameLike(acronym, cityName, call.request.pageRequest()))
                 }
 
                 get("/") {

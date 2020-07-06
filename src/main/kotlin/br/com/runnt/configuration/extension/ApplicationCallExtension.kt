@@ -1,8 +1,8 @@
 package br.com.runnt.configuration.extension
 
 import br.com.runnt.domain.model.response.CreatedResponse
-import br.com.runnt.domain.model.response.ResourceNotFoundResponse
-import br.com.runnt.domain.model.response.UnprocessableEntityResponse
+import br.com.runnt.domain.model.response.exception.ResourceNotFoundResponse
+import br.com.runnt.domain.model.response.exception.UnprocessableEntityResponse
 import io.ktor.application.ApplicationCall
 import io.ktor.http.HttpStatusCode
 import io.ktor.response.respond

@@ -1,4 +1,4 @@
-package br.com.runnt.domain.model.response
+package br.com.runnt.domain.model.response.exception
 
 class UnprocessableEntityResponse(
     val message: String,

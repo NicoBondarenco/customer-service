@@ -4,8 +4,8 @@ import br.com.runnt.configuration.extension.notFound
 import br.com.runnt.configuration.extension.unprocessableEntity
 import br.com.runnt.domain.exception.ResourceNotFoundException
 import br.com.runnt.domain.exception.UnprocessableEntityException
-import br.com.runnt.domain.model.response.ResourceNotFoundResponse
-import br.com.runnt.domain.model.response.UnprocessableEntityResponse
+import br.com.runnt.domain.model.response.exception.ResourceNotFoundResponse
+import br.com.runnt.domain.model.response.exception.UnprocessableEntityResponse
 import io.ktor.application.Application
 import io.ktor.application.call
 import io.ktor.application.install
